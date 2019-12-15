@@ -12,7 +12,10 @@ public class AllLightsCommand implements Command {
 	
 	public void execute() {
 	for(Light light : lights) {
+		if(light.isOn()) {
 		light.toggle();
+		
+		}
 	}
 
 	}
