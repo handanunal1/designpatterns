@@ -15,6 +15,8 @@ public class Light {
 	public boolean isOn() {
 		return isOn;
 	}
+	
+
 	public void toggle() {
 		if (isOn) {
 			off();
@@ -25,8 +27,8 @@ public class Light {
 		}
 	}
 	private void off() {
-		// TODO Auto-generated method stub
-
+	
+		  System.out.println(location + " Light switched off ");
 	}
 	
 	  public void on() {

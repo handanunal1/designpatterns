@@ -19,5 +19,14 @@ public void registerLight(Light light) {
 		}
 		
 	}
+	public void turnoffAllLights() {
+	for(Light light: lights) {
+			
+			if(light.isOn()) {
+				light.toggle();
+			}
+		}
+		
+	}
 	
 }
